@@ -1,0 +1,131 @@
+/* Sidebar.css */
+
+.Sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 25rem; /* Default width for larger screens */
+  height: 100%;
+  background-color: #1a1a1a; /* Dark gray/black background for the sidebar */
+  color: white; /* White text color */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Add scrollbar if needed */
+}
+
+/* Stylish heading */
+.Sidebar h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white; /* Add a border under the title */
+  padding-bottom: 10px;
+  text-transform: uppercase; /* All caps */
+  font-family: 'Arial', sans-serif; /* Stylish font, change as needed */
+}
+
+/* Add Project button */
+.Sidebar button.add-project {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #7a7e8a71; /* Gray background */
+  color: #f0f0f0; /* Off-white text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.Sidebar button.add-project:hover {
+  background-color: #333; /* Dark gray on hover */
+  color: white; /* White text on hover */
+}
+
+/* Project name buttons */
+.Sidebar button.project-name {
+  inline-size: 0.1cm;
+  display: block; 
+  width: 100%;
+  margin-bottom: 2px;
+  padding: 10px;
+  background: none; /* No background */
+  color: white; /* White text color */
+  border: none;
+  cursor: pointer;
+  text-align: center; /* Align text to the left */
+}
+
+.Sidebar button.project-name:hover {
+  background-color: #333; /* Dark gray background on hover */
+  color: white; /* White text on hover */
+}
+
+.Sidebar ul {
+  list-style-type: none; 
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Adjust spacing and scrollbar */
+.Sidebar li {
+  margin: 0.5rem 0; /* Space between project name buttons */
+}
+
+/* Optional: add scrollbar styling if needed */
+.Sidebar::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.Sidebar::-webkit-scrollbar-thumb {
+  background-color: #555; /* Color of the scrollbar */
+  border-radius: 10px; /* Rounded corners of the scrollbar */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .Sidebar {
+    width: 20rem; /* Reduce width for medium screens */
+  }
+
+  .Sidebar h1 {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  .Sidebar button.add-project {
+    padding: 8px; /* Adjust padding */
+  }
+
+  .Sidebar button.project-name {
+    padding: 8px; /* Adjust padding */
+  }
+}
+
+@media (max-width: 992px) {
+  .Sidebar {
+    width: 18rem; /* Further reduce width for smaller screens */
+  }
+
+  .Sidebar h1 {
+    font-size: 1rem; /* Further adjust font size */
+  }
+
+  .Sidebar button.add-project,
+  .Sidebar button.project-name {
+    padding: 6px; /* Further adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .Sidebar {
+    width: 15rem; /* Reduce width for mobile screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .Sidebar h1 {
+    font-size: 0.875rem; /* Further adjust font size */
+  }
+
+  .Sidebar button.add-project,
+  .Sidebar button.project-name {
+    padding: 5px; /* Further adjust padding */
+  }
+}

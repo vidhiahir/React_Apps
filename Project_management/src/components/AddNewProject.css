@@ -1,0 +1,95 @@
+/* AddNewProject.css */
+
+.AddNewProject {
+  background-color: #f0f0f0; /* Off-white background color */
+  color: white; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for 3D effect */
+  padding: 2rem; /* Padding inside the box */
+  width: 50%; /* Medium width, adjust as needed */
+  max-width: 600px; /* Maximum width for larger screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Center horizontally */
+}
+
+.AddNewProject h2 {
+  font-size: 2rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 1rem; /* Space below heading */
+  text-transform: uppercase; /* All caps */
+  font-family: 'Arial', sans-serif; /* Stylish font */
+  color: black; /* Black text color for heading */
+}
+
+.AddNewProject label {
+  display: block; /* Block display for labels */
+  margin-top: 1rem; /* Space above labels */
+  color:#333;
+  font-weight: 500; /* Slightly bold text */
+}
+
+.AddNewProject input {
+  width: 100%; /* Full width of the container */
+  padding: 0.5rem; /* Padding inside input fields */
+  margin-top: 0.5rem; /* Space above inputs */
+  border: 1px solid #333; /* Dark grey border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #333; /* Dark grey background */
+  color: white; /* White text color */
+}
+
+.AddNewProject input[type="date"] {
+  height: auto; /* Adjust height for date input */
+}
+
+.AddNewProject textarea {
+  width: 100%; /* Full width of the container */
+  padding: 0.5rem; /* Padding inside text area */
+  margin-top: 0.5rem; /* Space above text area */
+  border: 1px solid #333; /* Dark grey border */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #333; /* Dark grey background */
+  color: white; /* White text color */
+  min-height: 6rem; /* Minimum height for description field */
+}
+
+/* Button styling */
+.AddNewProject button {
+  background-color: black; /* Gray background */
+  color: #f0f0f0; /* Off-white text color */
+  border: none; /* Remove border */
+  padding: 0.5rem 1rem; /* Padding inside buttons */
+  margin: 1rem 0.5rem; /* Space around buttons */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.AddNewProject button:hover {
+  background-color: #5b5656; /* Dark gray on hover */
+  color: white; /* White text on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .AddNewProject {
+    width: 90%; /* Adjust width for smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
+  
+  .AddNewProject h2 {
+    font-size: 1.5rem; /* Smaller font size for heading */
+  }
+  
+  .AddNewProject input,
+  .AddNewProject textarea {
+    padding: 0.4rem; /* Adjust padding */
+  }
+  
+  .AddNewProject button {
+    padding: 0.4rem 0.8rem; /* Adjust padding for buttons */
+  }
+}

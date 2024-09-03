@@ -1,0 +1,153 @@
+/* ProjectInfo.css */
+
+.ProjectInfoContainer {
+  background-color: #f0f0f0; /* Off-white background color */
+  color: white; /* White text color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2rem 8rem rgba(0, 2, 3, 3); /* Box shadow for 3D effect */
+  padding: 2rem; /* Padding inside the box */
+  width: 50%; /* Medium width, adjust as needed */
+  max-width: 600px; /* Maximum width for larger screens */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto; /* Center horizontally */
+}
+
+.ProjectInfo button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: rgb(71, 67, 67); /* Red background for delete button */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ProjectInfo button:hover {
+  background-color:black /* Darker red on hover */
+  /* color: black; */
+}
+
+.ProjectInfo h1 {
+  font-size: 1.5rem; /* Larger font size for the project name */
+  color: black; /* Black color for the name */
+  font-weight: bold; /* Bold font weight */
+  margin: 0; /* Remove default margin */
+}
+
+.ProjectInfo h4 {
+  font-size: 1rem; /* Slightly smaller font size for description */
+  color: #333; /* Dark grey color for description */
+  margin: 1rem 0; /* Space between description and due date */
+}
+
+.ProjectInfo h2 {
+  font-size: 0.9rem; /* Font size for due date */
+  color: black; /* Black color */
+  margin: 0; /* Remove default margin */
+}
+
+/* Tasks.css */
+
+.Tasks {  
+  padding: 1rem; /* Padding around content */
+  /* margin-top: 1rem;  */
+}
+
+.Tasks h1{
+  font-size: 1.3rem; /* Larger font size for the project name */
+  color: black; /* Black color for the name */
+  font-weight: bold; /* Bold font weight */
+  margin-bottom: 1rem; /* Remove default margin */
+}
+.Tasks input {
+  background-color:grey ;
+  color:black;
+  margin-right:1rem;
+  font-weight:500;
+  padding:0.4rem;
+  width: 15rem;  
+}
+
+.Tasks button{
+  top: 1rem;
+  right: 1rem;
+  background-color: rgb(71, 67, 67); /* Red background for delete button */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tasks button:hover{
+  background-color: black;
+}
+
+.Tasks ul {
+  margin-top: 1.5rem;
+  list-style-type: none; 
+  
+  padding: 0;
+ }
+
+.Tasks li {  
+  
+   padding: 0.8rem;
+  } 
+
+  .Tasks .separate{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: grey;
+    padding-left : 0.7rem;    
+    align-items: center;
+  }
+
+
+
+.Tasks li button {  
+  background-color: white;
+  color: black; /* Grey text color */
+  font-weight: 400;  
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Tasks li button:hover {
+  background-color: darkgrey; /* Darker grey on hover */
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 1200px) {
+  .ProjectInfoContainer {
+    width: calc(100% - 20rem); /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .ProjectInfoContainer {
+    width: calc(100% - 15rem); /* Further adjust width */
+  }
+}
+
+@media (max-width: 768px) {
+  .ProjectInfoContainer {
+    width: calc(100% - 10rem); /* Adjust width for very small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .ProjectInfoContainer {
+    width: 100%; /* Full width on very small screens */
+    margin-left: 0; /* Remove margin */
+  }
+}
